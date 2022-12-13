@@ -11,7 +11,7 @@ export default function Single() {
       <div className="single">
         <SinglePost />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

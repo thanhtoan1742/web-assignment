@@ -7,40 +7,96 @@ import AccountDetails from "../main/accountDetail";
 import ManageAccount from "../../components/admin/ManageAccount/ManageAccount";
 
 const adminRoutes = [
-
-    {
-        path: '',
-        exact: true,
-        public: true,
-        component: <><ProtectedRoute element = {<><Sidebar /><ManageProduct/></>} role = 'Admin'/></>
-    },
-    {
-        path: 'news',
-        exact: true,
-        public: true,
-        component: <><ProtectedRoute element = {<><Sidebar /><ManageNews/></>} role = 'Admin'/></>
-    },
-    {
-        path: 'contact',
-        exact: true,
-        public: true,
-        component: <><ProtectedRoute element = {<><Sidebar /><ManageContact/></>} role = 'Admin'/></>
-    },
-    {
-        path: 'account',
-        exact: true,
-        public: true,
-        component: <><ProtectedRoute element = {<><Sidebar /><ManageAccount/></>} role = 'Admin'/></>
-    },
-    {
-        path: 'account-details',
-        exact: true,
-        public: true,
-        component: <><ProtectedRoute element = {<><Sidebar /><AccountDetails /></>} role = 'Admin'/></>
-    }
-
+  {
+    path: "",
+    exact: true,
+    public: true,
+    component: (
+      <>
+        <ProtectedRoute
+          element={
+            <>
+              <Sidebar />
+              <ManageProduct />
+            </>
+          }
+          role="Admin"
+        />
+      </>
+    ),
+  },
+  {
+    path: "news",
+    exact: true,
+    public: true,
+    component: (
+      <>
+        <ProtectedRoute
+          element={
+            <>
+              <Sidebar />
+              <ManageNews />
+            </>
+          }
+          role="Admin"
+        />
+      </>
+    ),
+  },
+  {
+    path: "contact",
+    exact: true,
+    public: true,
+    component: (
+      <>
+        <ProtectedRoute
+          element={
+            <>
+              <Sidebar />
+              <ManageContact />
+            </>
+          }
+          role="Admin"
+        />
+      </>
+    ),
+  },
+  {
+    path: "account",
+    exact: true,
+    public: true,
+    component: (
+      <>
+        <ProtectedRoute
+          element={
+            <>
+              <Sidebar />
+              <ManageAccount />
+            </>
+          }
+          role="Admin"
+        />
+      </>
+    ),
+  },
+  {
+    path: "account-details",
+    exact: true,
+    public: true,
+    component: (
+      <>
+        <ProtectedRoute
+          element={
+            <>
+              <Sidebar />
+              <AccountDetails />
+            </>
+          }
+          role="Admin"
+        />
+      </>
+    ),
+  },
 ];
-
-
 
 export default adminRoutes;
