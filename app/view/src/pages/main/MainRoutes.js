@@ -12,6 +12,8 @@ import SinglePost from "../../components/news/singlePost/SinglePost";
 import ForgotPassword from "../common/ForgotPassword";
 import AccountDetails from "./accountDetail";
 import ProtectedRoute from "../common/ProtectedRoute";
+import Product from "./Product";
+import SingpleProduct from "./SingleProduct";
 
 const MainRoutes = [
   {
@@ -77,12 +79,32 @@ const MainRoutes = [
     ),
   },
   {
-    path: "menu",
+    path: "news/post/:id",
+    component: (
+      <>
+        <Navbar />
+        <SinglePost />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "product",
     component: (
       <>
         <Navbar />
         <Cart />
-        <NewsPage />
+        <Product />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "product/:id",
+    component: (
+      <>
+        <Navbar />
+        <SingpleProduct />
         <Footer />
       </>
     ),
@@ -113,16 +135,6 @@ const MainRoutes = [
       <>
         <Navbar />
         <Blogs />
-        <Footer />
-      </>
-    ),
-  },
-  {
-    path: "news/post/:id",
-    component: (
-      <>
-        <Navbar />
-        <SinglePost />
         <Footer />
       </>
     ),

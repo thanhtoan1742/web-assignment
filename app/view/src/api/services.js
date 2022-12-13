@@ -88,7 +88,7 @@ const deleteNews = (id) => {
 const getSingleProdcut = (id, callback) => {
   axios
     .get(url + "product/read_single.php?id=" + id)
-    .then((res) => callback(res.data))
+    .then((res) => callback(res.data[0]))
     .catch((error) => console.log(error));
 };
 
