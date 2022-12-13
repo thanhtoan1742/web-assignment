@@ -7,7 +7,7 @@ import Homepage from "./pages/news/homepage/Homepage";
 import Single from "./pages/news/single/Single";
 
 function App() {
-  
+
   return (
     <ProductProvider>
       <BrowserRouter>
