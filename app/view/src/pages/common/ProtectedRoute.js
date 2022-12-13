@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";
-
-const url = "http://localhost/assi/app/controller/";
+import { url } from "../../api/services";
 
 const ProtectedRoute = ({ element, role }) => {
   let [itemToShow, setItem] = useState(null);

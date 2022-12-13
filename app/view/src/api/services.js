@@ -1,18 +1,15 @@
 import axios from "axios";
 
-const url = "http://localhost/app/controller/";
+const url = "http://localhost/web-assignment/app/controller/";
 
 const requireProductList = (callback) => {
-  console.log("getting product");
   axios
     .get(url + "product/read.php")
     .then((res) => {
       const data = res.data;
-      console.log(data);
       callback(data);
     })
     .catch((error) => console.log(error));
-  console.log("end getting product");
 };
 
 const getUser = () => {
