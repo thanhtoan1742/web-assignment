@@ -45,15 +45,8 @@ const SignUp = () => {
   };
 
   return (
-    <div
-      className="container mb-5"
-      style={{
-        backgroundImage: `url("/images/background1.jpg")`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top",
-      }}
-    >
-      <h1 className="my-4 text-center text-uppercase">Buy Me First</h1>
+    <div className="container d-flex flex-column justify-content-center align-items-center">
+      <h1 className="my-4 text-center text-uppercase">Sign Up</h1>
       <form
         className="form-control my-4"
         style={{ maxWidth: "600px" }}

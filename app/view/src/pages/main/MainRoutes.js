@@ -16,109 +16,42 @@ import ProtectedRoute from "../common/ProtectedRoute";
 const MainRoutes = [
   {
     path: "",
-    exact: true,
-    public: true,
-    component: (
-      <>
-        <Navbar />
-        <Cart /> <Home /> <Footer />
-      </>
-    ),
-  },
-  {
-    path: "news",
-    exact: true,
-    public: true,
     component: (
       <>
         <Navbar />
         <Cart />
-        <NewsPage />
+        <Home />
         <Footer />
       </>
     ),
   },
   {
     path: "signin",
-    exact: true,
-    public: true,
     component: (
       <>
         <Signin />
-        <Footer />
       </>
     ),
   },
   {
     path: "signup",
-    exact: true,
-    public: true,
     component: (
       <>
         <SignUp />
-        <Footer />
-      </>
-    ),
-  },
-  {
-    path: "about",
-    exact: true,
-    public: true,
-    component: (
-      <>
-        <Navbar /> <About />
-        <Footer />
-      </>
-    ),
-  },
-  {
-    path: "contact",
-    exact: true,
-    public: true,
-    component: (
-      <>
-        <Navbar /> <Contact />
-        <Footer />
-      </>
-    ),
-  },
-  {
-    path: "blogs",
-    exact: true,
-    public: true,
-    component: (
-      <>
-        <Navbar /> <Blogs />
-        <Footer />
-      </>
-    ),
-  },
-  {
-    path: "news/post/:id",
-    exact: true,
-    public: true,
-    component: (
-      <>
-        <Navbar /> <SinglePost />
-        <Footer />
       </>
     ),
   },
   {
     path: "forgot-password",
-    exact: true,
-    public: true,
     component: (
       <>
         <ForgotPassword />
-        <Footer />
       </>
     ),
   },
+
   {
     path: "account-details",
-    exact: true,
-    public: true,
     component: (
       <ProtectedRoute
         element={
@@ -130,6 +63,57 @@ const MainRoutes = [
         }
         role="User"
       />
+    ),
+  },
+  {
+    path: "news",
+    component: (
+      <>
+        <Navbar />
+        <Cart />
+        <NewsPage />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "about",
+    component: (
+      <>
+        <Navbar />
+        <About />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "contact",
+    component: (
+      <>
+        <Navbar />
+        <Contact />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "blogs",
+    component: (
+      <>
+        <Navbar />
+        <Blogs />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "news/post/:id",
+    component: (
+      <>
+        <Navbar />
+        <SinglePost />
+        <Footer />
+      </>
     ),
   },
 ];

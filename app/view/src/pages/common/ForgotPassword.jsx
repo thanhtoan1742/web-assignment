@@ -44,15 +44,7 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div
-      className="container"
-      style={{
-        backgroundImage: `url("/images/background1.jpg")`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top",
-        height: "70vh",
-      }}
-    >
+    <div className="container d-flex flex-column justify-content-center align-items-center py-4">
       <h1 className="my-4 text-center">Forgot password</h1>
       <h5 className="text-center">Your new password is your email</h5>
       <form

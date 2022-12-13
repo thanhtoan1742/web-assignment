@@ -6,7 +6,7 @@ import ManageContact from "../../components/admin/ManageContact/ManageContact";
 import AccountDetails from "../main/accountDetail";
 import ManageAccount from "../../components/admin/ManageAccount/ManageAccount";
 
-const adminRoutes = [
+const AdminRoutes = [
   {
     path: "",
     exact: true,
@@ -99,4 +99,4 @@ const adminRoutes = [
   },
 ];
 
-export default adminRoutes;
+export default AdminRoutes;

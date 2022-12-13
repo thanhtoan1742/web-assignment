@@ -64,16 +64,15 @@ const AccountDetails = () => {
 
   return (
     <div
-      className="container mb-5"
+      className="container mb-5 d-flex flex-column align-items-center"
       style={{
-        backgroundImage: `url("/images/background1.jpg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top",
       }}
     >
       <h1 className="my-4 text-center text-uppercase">Account Details</h1>
       <form
-        className="form-control my-4"
+        className="form-control my-4 max-auto "
         style={{ maxWidth: "600px" }}
         onSubmit={handleSubmit}
       >
