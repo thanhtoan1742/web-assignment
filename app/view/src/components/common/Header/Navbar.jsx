@@ -52,10 +52,10 @@ const Navbar = () => {
 
         {!isLogin ? (
           <>
-            <button>
+            <button className="btn">
               <Link to="/signin">Sign In</Link>
             </button>
-            <button>
+            <button className="btn">
               <Link to="/signup">Sign Up</Link>
             </button>
           </>
