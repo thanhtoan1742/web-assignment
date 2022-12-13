@@ -6,13 +6,6 @@ function Footer() {
       <div className="footer">
         <div className="head-footer">
           <div className="row p-3">
-            <div className="col sulogan">
-              <h4>BuyMeFirst</h4>
-              <p>
-                Điểm 10 Cho Sự Chất Lượng. Điểm 11 cho sự uy tín. Buy me first
-                luôn bên bạn.
-              </p>
-            </div>
             <div className="col footer-about">
               <h4>About</h4>
               <ul className="box ">
@@ -63,7 +56,7 @@ function Footer() {
         </div>
 
         <div className="bottom-footer mb-4">
-          <p>All rights reserved by &copy; CompanyName 2021</p>
+          <p>All rights reserved by &copy; TrungRestaurant 2022</p>
           <div className="footer-icon">
             <i
               className="fab fa-facebook-square"
@@ -72,14 +65,6 @@ function Footer() {
             <i
               className="fab fa-twitter-square"
               style={{ color: "#1DA1F2" }}
-            ></i>
-            <i
-              className="fab fa-pinterest-square"
-              style={{ color: "#E60023" }}
-            ></i>
-            <i
-              className="fab fa-instagram-square"
-              style={{ color: "#F56040" }}
             ></i>
           </div>
         </div>
