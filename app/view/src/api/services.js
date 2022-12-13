@@ -32,7 +32,7 @@ const checkUserIs = (role) => {
   return new Promise((resolve, reject) => {
     getUser()
       .then((user) => {
-        resolve(user && role == user.role);
+        resolve(user && role === user.role);
       })
       .catch((error) => reject(error));
   });

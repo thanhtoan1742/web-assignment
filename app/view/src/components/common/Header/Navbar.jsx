@@ -2,27 +2,24 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
-import { checkUserIs } from "../../../api/services";
+import { checkUserIs, getUser } from "../../../api/services";
 import { logout } from "../../../api/services";
 import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [isLogin, setLogin] = useState(false);
+  const [role, setRole] = useState("");
 
   useEffect(() => {
-    checkUserIs("User")
-      .then((isLogin) => {
-        setLogin(isLogin);
-      })
-      .catch((error) => setLogin(false));
+    getUser().then((user) => {
+      if (user) setRole(user.role);
+    });
   }, []);
 
   const handleSignOut = (event) => {
     event.preventDefault();
-
     logout();
-    setLogin(false);
+    setRole("");
     navigate("/");
   };
 
@@ -45,12 +42,13 @@ const Navbar = () => {
         <Link to="/contact">Contact</Link>
         <Link to="/news">News</Link>
         <Link to="/blogs">Blogs</Link>
+        {role === "Admin" ? <Link to="/admin">Admin</Link> : undefined}
       </div>
 
       <div className="nav_menu">
         {/* <button className='btn btn'><i class="fas fa-shopping-cart"></i></button> */}
 
-        {!isLogin ? (
+        {role === "" ? (
           <>
             <button className="btn">
               <Link to="/signin">Sign In</Link>

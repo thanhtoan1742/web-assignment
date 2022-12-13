@@ -22,29 +22,13 @@ const SignIn = () => {
     axios
       .post(url + "account/login.php", data, { withCredentials: true })
       .then((result) => {
-        if (result.data.isSuccess)
-          navigate(result.data.role === "Admin" ? "/" : "/", {
-            replace: true,
-          });
-        else {
-          alert("Unsuccessful");
-        }
+        if (result.data.isSuccess) navigate("/", { replace: true });
+        else alert("Unsuccessful");
       })
       .catch((error) => {
         alert(error);
       });
   };
-
-  useEffect(
-    () =>
-      axios
-        .post(url + "account/login.php", data, { withCredentials: true })
-        .then((result) => {
-          if (result.data.isSuccess)
-            navigate(result.data.role === "Admin" ? "/admin" : "/");
-        }),
-    []
-  );
 
   const handleOnChange = (event) => {
     var name = event.target.name;
