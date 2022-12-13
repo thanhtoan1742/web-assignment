@@ -13,24 +13,18 @@ function About() {
     <div id="about">
       <div className="container">
         <div className="about" data-aos="fade-up">
-          <h1>Về chúng tôi</h1>
+          <h1>About Us</h1>
         </div>
 
         <div className="about_banner">
           <div className="about_banner_text">
             <div>
-              <h2 data-aos="fade-up">
-                KHÔNG GIAN MỞ, THOẢI MÁI PHÙ HỢP ĐỂ TẬN HƯỞNG VỚI GIA ĐÌNH
-              </h2>
+              <h2 data-aos="fade-up">OPEN SPACE, ENJOY WITH YOUR FAMILY</h2>
               <p data-aos="fade-up">
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
+                Beautiful space. Beautiful space. Beautiful space. Beautiful
+                space. Beautiful space. Beautiful space. Beautiful space.
+                Beautiful space. Beautiful space. Beautiful space. Beautiful
+                space. Beautiful space. Beautiful space.
               </p>
             </div>
           </div>
@@ -42,18 +36,12 @@ function About() {
         <div className="about_banner">
           <div className="about_banner_text">
             <div>
-              <h2 data-aos="fade-up">
-                KHÔNG GIAN MỞ, THOẢI MÁI PHÙ HỢP ĐỂ TẬN HƯỞNG VỚI GIA ĐÌNH
-              </h2>
+              <h2 data-aos="fade-up">OPEN SPACE, ENJOY WITH YOUR FAMILY</h2>
               <p data-aos="fade-up">
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
-                Không gian đẹp. Không gian đẹp. Không gian đẹp. Không gian đẹp.
+                Beautiful space. Beautiful space. Beautiful space. Beautiful
+                space. Beautiful space. Beautiful space. Beautiful space.
+                Beautiful space. Beautiful space. Beautiful space. Beautiful
+                space. Beautiful space. Beautiful space.
               </p>
             </div>
           </div>
@@ -64,7 +52,7 @@ function About() {
       </div>
       <div className="container">
         <div className="about" data-aos="fade-up">
-          <h1>Con người</h1>
+          <h1>People</h1>
         </div>
         <div className="row" style={{ justifyContent: "center" }}>
           <div className="about_card" data-aos="fade-up">
@@ -73,14 +61,13 @@ function About() {
                 src="https://t3.ftcdn.net/jpg/02/94/62/14/360_F_294621430_9dwIpCeY1LqefWCcU23pP9i11BgzOS0N.jpg"
                 alt=""
               />
-              <h5>Trần Văn Minh</h5>
-              <h6>Chủ Nhà Hàng</h6>
+              <h5>John Smith</h5>
+              <h6>Owner</h6>
 
               <p>
-                Nhiều tiền. Nhiều tiền. Nhiều tiền. Nhiều tiền. Nhiều tiền.
-                Nhiều tiền. Nhiều tiền. Nhiều tiền. Nhiều tiền. Nhiều tiền.
-                Nhiều tiền. Nhiều tiền. Nhiều tiền. Nhiều tiền. Nhiều tiền.
-                Nhiều tiền.
+                Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich.
+                Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich.
+                Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich. Rich.
               </p>
             </div>
           </div>
@@ -91,11 +78,13 @@ function About() {
                 src="https://t3.ftcdn.net/jpg/02/94/62/14/360_F_294621430_9dwIpCeY1LqefWCcU23pP9i11BgzOS0N.jpg"
                 alt=""
               />
-              <h5>Trần Văn Minh</h5>
-              <h6>Đầu bếp chính</h6>
+              <h5>John Smith</h5>
+              <h6>Owner</h6>
               <p>
-                Nấu ăn ngon. Nấu ăn ngon. Nấu ăn ngon. Nấu ăn ngon. Nấu ăn ngon.
-                Nấu ăn ngon. Nấu ăn ngon. Nấu ăn ngon. Nấu ăn ngon. Nấu ăn ngon.
+                Can cook. Can cook. Can cook. Can cook. Can cook. Can cook. Can
+                cook. Can cook. Can cook. Can cook. Can cook. Can cook. Can
+                cook. Can cook. Can cook. Can cook. Can cook. Can cook. Can
+                cook. Can cook. Can cook. Can cook. Can cook. Can cook.
               </p>
             </div>
           </div>

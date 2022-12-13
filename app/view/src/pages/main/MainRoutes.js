@@ -77,6 +77,17 @@ const MainRoutes = [
     ),
   },
   {
+    path: "menu",
+    component: (
+      <>
+        <Navbar />
+        <Cart />
+        <NewsPage />
+        <Footer />
+      </>
+    ),
+  },
+  {
     path: "about",
     component: (
       <>

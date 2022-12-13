@@ -70,18 +70,18 @@ function Contact() {
               </form>
             </div>
           </div>
-          <div className="contact_address px-3" data-aos="fade-up">
+          <div className="contact_address px-3 mx-4" data-aos="fade-up">
             <Grid container spacing={2}>
               <Grid item xs={6}>
-                <h4>Quang Tri</h4>
-                <p>Trieu An, Trieu Phong</p>
-                <p>nguyenthanhluan@gmail.com</p>
+                <h4>Ha Noi</h4>
+                <p>Ho Guom, Trang Tien</p>
+                <p>admin@email.com</p>
                 <p>0123456789</p>
               </Grid>
               <Grid item xs={6}>
                 <h4>Sai Gon</h4>
                 <p>Linh Trung, Thu Duc</p>
-                <p>buihuutiendat@gmail.com</p>
+                <p>admin@email.com</p>
                 <p>0123456789</p>
               </Grid>
             </Grid>
