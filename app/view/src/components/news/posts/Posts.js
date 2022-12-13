@@ -14,7 +14,6 @@ const Posts = () => {
 
   return (
     <div className="posts row">
-      <h1 className="text-black-50 mb-5">{"HOME >> NEWS"}</h1>
       {newsList.map((news, index) => {
         return (
           <div className="col-12 col-md-6 col-xl-4" key={index}>
