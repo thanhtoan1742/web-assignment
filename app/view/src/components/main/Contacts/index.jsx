@@ -33,7 +33,6 @@ function Contact() {
 
   return (
     <div id="contact">
-      <Slider title="Contact Now" />
       <div className="container">
         <div className="contact">
           <h1 data-aos="fade-up">
