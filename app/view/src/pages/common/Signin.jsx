@@ -14,15 +14,15 @@ const SignIn = () => {
         username: "",
         password: ""
     });
-    
+
     const navigate = useNavigate();
-    
+
     const handleSubmit = (event) => {
 		event.preventDefault()
+		console.log(data)
         axios.post(url + 'account/login.php', data, {withCredentials: true})
 			.then(result => {
-
-				console.log(result);
+				console.log(result)
 				if (result.data.isSuccess)
 					navigate(result.data.role == 'Admin' ? '/admin' : '/', {replace: true})
 				else {
@@ -49,7 +49,7 @@ const SignIn = () => {
 		var value = event.target.value
 		if (name == "remember")
         	value = event.target.checked
-		
+
 		data[name] = value
         setData({...data})
 
@@ -96,7 +96,7 @@ const SignIn = () => {
 					</form>
 				</div>
 			</div>
-		</div>        
+		</div>
     </section>
 }
 

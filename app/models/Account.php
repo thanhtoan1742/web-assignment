@@ -1,11 +1,11 @@
 <?php
-    
+
 
 class Account {
 
     // db config
     private $conn;
-    private $headers =  'MIME-Version: 1.0' . "\r\n" . 'From:buihuutiendat2017@gmail.com ' . "\r\n" . 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+    // private $headers =  'MIME-Version: 1.0' . "\r\n" . 'From:buihuutiendat2017@gmail.com ' . "\r\n" . 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
     // attribute
     public $id;
@@ -18,7 +18,7 @@ class Account {
 
 
     private function isValid() {
-        
+
         return $this->username != '' && $this->password != '' && $this->email != '' && $this->phonenumber != '';
     }
 
@@ -31,8 +31,8 @@ class Account {
         $stmt->bind_param('s', $this->username);
         $stmt->execute();
         $result = $stmt->get_result();
-        
-        
+
+
         if ($result->num_rows > 0) {
             $user = $result->fetch_assoc();
             $result = password_verify($this->password, $user['password']);
@@ -85,8 +85,8 @@ class Account {
     public function create() {
         if (!$this->isValid())
             return false;
-        
-        $sql = $this->conn->prepare("INSERT into account(username, password, email, 
+
+        $sql = $this->conn->prepare("INSERT into account(username, password, email,
             name, phoneNumber, role) VALUES (?,?,?,?,?, 'User')
         ");
         $pass = password_hash($this->password, PASSWORD_BCRYPT);

@@ -1,10 +1,9 @@
 import axios from "axios";
 
-// const url =http://localhost/controller/product/read.php
-const url = 'http://localhost/assi/app/controller/';
+const url = 'http://localhost/app/controller/';
 
 const requireProductList = callback =>{
-    
+
     axios.get(url + 'product/read.php')
       .then(res => {
         const data = res.data;
@@ -20,7 +19,7 @@ const getUser = () => {
   return new Promise((resolve, reject) => {
     axios.get(url + 'account/read_session_data.php', {withCredentials: true})
     .then(result => {
-      
+
       if (result.data.isLogin)
         resolve(result.data);
       else {
@@ -31,13 +30,13 @@ const getUser = () => {
       reject(null);
     })
 
-  }) 
+  })
 }
 
 const checkUserIs = (role) => {
   return new Promise((resolve, reject) => {
     getUser().then(user => {
-      
+
       resolve(user && role == user.role)
     })
     .catch(
@@ -49,9 +48,9 @@ const checkUserIs = (role) => {
 const logout = async () => {
 
   const result = await axios.get(url + 'account/logout.php', {withCredentials: true})
-  
- 
-  return result && result.data.isLogin;  
+
+
+  return result && result.data.isLogin;
 }
 
 const requireNewsList = callback => {
@@ -92,7 +91,7 @@ const editNews =(News)=>{
 const deleteNews = (id)=>{
   axios.delete(url+ 'News/delete.php?id='+ id)
   .then(res=>{
-    
+
   })
   .catch(error => console.log(error));
 }
@@ -186,7 +185,7 @@ const requireContactList = callback => {
 };
 
 const getAccountUser = callback =>{
-    
+
   axios.get(url + 'account/read_list.php')
     .then(res => {
       const data = res.data;
