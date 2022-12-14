@@ -16,18 +16,20 @@ function Slider({ title }) {
                 style={{ height: "550px" }}
               >
                 <div className="col-md-7 col-12">
-                  <h4>{title}</h4>
+                  <h4>Trung restaurant</h4>
                   <p>
-                    This has many features that are simply awesome. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Corporis quos
-                    at hic repudiandae minus asperiores, mollitia quidem
-                    blanditiis tempora est sunt vel temporibus error unde
-                    molestiae eum. Fuga, mollitia quod.
+                    Trung restaurant is good. Trung restaurant is good. Trung
+                    restaurant is good. Trung restaurant is good.Trung
+                    restaurant is good. Trung restaurant is good. Trung
+                    restaurant is good. Trung restaurant is good. Trung
+                    restaurant is good. Trung restaurant is good.
                   </p>
-                  <a href="#readmore">Read More</a>
                 </div>
                 <div className="col-md-5 col-12">
-                  <img src="https://i.imgur.com/iDwDQ4o.png" alt="slide" />
+                  <img
+                    src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="slide"
+                  />
                 </div>
               </div>
             </div>
