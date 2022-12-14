@@ -36,31 +36,21 @@ const EditProduct = ({
                     type="radio"
                     id="drink"
                     name="product_type"
-                    value="Phụ kiện"
-                    defaultChecked={product.type === "Phụ kiện"}
+                    value="ăn"
+                    defaultChecked={product.type === "ăn"}
                     onChange={handleInputChange}
                   />
-                  <label htmlFor="Drink">Phụ kiện</label>
+                  <label htmlFor="Drink">ăn</label>
 
                   <input
                     type="radio"
                     id="fastfood"
                     name="product_type"
-                    value="Laptop"
-                    defaultChecked={product.type === "Laptop"}
+                    value="uống"
+                    defaultChecked={product.type === "uống"}
                     onChange={handleInputChange}
                   />
-                  <label htmlFor="FastFood">Laptop</label>
-
-                  <input
-                    type="radio"
-                    id="sweets"
-                    name="product_type"
-                    value="Desktop"
-                    defaultChecked={product.type === "Desktop"}
-                    onChange={handleInputChange}
-                  />
-                  <label htmlFor="Sweets">Desktop</label>
+                  <label htmlFor="FastFood">uống</label>
                 </div>
                 <label className="mt-2">Image:</label>
                 <input

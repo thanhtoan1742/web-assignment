@@ -208,10 +208,8 @@ function ManageProduct() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              <MenuItem value={"All"}>All</MenuItem>
-              <MenuItem value={"Drink"}>Điện thoại</MenuItem>
-              <MenuItem value={"FastFood"}>Laptop</MenuItem>
-              <MenuItem value={"Sweets"}>Phụ kiện</MenuItem>
+              <MenuItem value={"ăn"}>ăn</MenuItem>
+              <MenuItem value={"uống"}>uống</MenuItem>
             </Select>
           </FormControl>
 

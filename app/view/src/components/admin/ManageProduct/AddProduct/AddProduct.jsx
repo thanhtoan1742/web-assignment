@@ -30,28 +30,19 @@ const AddProduct = ({ isShowing, hide, callB, handleInputChange }) =>
                     type="radio"
                     id="Laptop"
                     name="type"
-                    value="Laptop"
+                    value="ăn"
                     onChange={handleInputChange}
                   />
-                  <label htmlFor="Laptop">Laptop</label>
+                  <label htmlFor="Laptop">ăn</label>
 
                   <input
                     type="radio"
                     id="Desktop"
                     name="type"
-                    value="Desktop"
+                    value="uống"
                     onChange={handleInputChange}
                   />
-                  <label htmlFor="Desktop">Desktop</label>
-
-                  <input
-                    type="radio"
-                    id="Accessory"
-                    name="type"
-                    value="Phụ kiện"
-                    onChange={handleInputChange}
-                  />
-                  <label htmlFor="Accessory">Phụ kiện</label>
+                  <label htmlFor="Desktop">uống</label>
                 </div>
 
                 <label className="mt-2">Image:</label>
